@@ -1,0 +1,138 @@
+2022-01-07 10:42:51,972 [INFO] lithops.config -- Lithops v2.5.8
+2022-01-07 10:42:51,975 [DEBUG] lithops.config -- Loading Serverless backend module: ibm_cf
+2022-01-07 10:42:51,977 [DEBUG] lithops.config -- Loading Storage backend module: ibm_cos
+2022-01-07 10:42:51,981 [DEBUG] lithops.storage.backends.ibm_cos.ibm_cos -- Creating IBM COS client
+2022-01-07 10:42:51,982 [DEBUG] lithops.storage.backends.ibm_cos.ibm_cos -- Set IBM COS Endpoint to https://s3.eu-de.cloud-object-storage.appdomain.cloud
+2022-01-07 10:42:51,984 [DEBUG] lithops.storage.backends.ibm_cos.ibm_cos -- Using access_key and secret_key
+2022-01-07 10:42:51,999 [INFO] lithops.storage.backends.ibm_cos.ibm_cos -- IBM COS client created - Region: eu-de
+2022-01-07 10:42:52,003 [DEBUG] lithops.serverless.backends.ibm_cf.ibm_cf -- Creating IBM Cloud Functions client
+2022-01-07 10:42:52,006 [DEBUG] lithops.serverless.backends.ibm_cf.ibm_cf -- Set IBM CF Namespace to eyal.michaeli@post.idc.ac.il_dev
+2022-01-07 10:42:52,022 [DEBUG] lithops.serverless.backends.ibm_cf.ibm_cf -- Set IBM CF Endpoint to https://eu-gb.functions.cloud.ibm.com
+2022-01-07 10:42:52,029 [INFO] lithops.serverless.backends.ibm_cf.ibm_cf -- IBM CF client created - Region: eu-gb - Namespace: eyal.michaeli@post.idc.ac.il_dev
+2022-01-07 10:42:52,032 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 - Invoker initialized. Max workers: 1200
+2022-01-07 10:42:52,034 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 - Serverless invoker created
+2022-01-07 10:42:52,037 [DEBUG] lithops.executors -- Function executor for ibm_cf created with ID: 5727d7-1
+2022-01-07 10:42:52,040 [INFO] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Selected Runtime: lithopscloud/ibmcf-python-v38 - 256MB
+2022-01-07 10:42:52,043 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-07 10:42:52,045 [DEBUG] lithops.job.job -- ExecutorID 5727d7-1 | JobID M000 - Serializing function and data
+2022-01-07 10:42:52,053 [DEBUG] lithops.job.serialize -- Referenced modules: /Users/eyalmichaeli/anaconda3/lib/python3.8/site-packages/lithops/storage/storage.py, _io, /Users/eyalmichaeli/anaconda3/lib/python3.8/site-packages/pandas/__init__.py, /Users/eyalmichaeli/anaconda3/lib/python3.8/pathlib.py
+2022-01-07 10:42:52,054 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-07 10:42:52,054 [DEBUG] lithops.job.job -- ExecutorID 5727d7-1 | JobID M000 - Uploading function and modules to the storage backend
+2022-01-07 10:42:52,478 [DEBUG] lithops.storage.backends.ibm_cos.ibm_cos -- PUT Object lithops.jobs/5727d7-1/9474982cbb8189ccc5ddbe322a8ac2d6.func.pickle - Size: 1.9KiB - OK
+2022-01-07 10:42:52,479 [DEBUG] lithops.job.job -- ExecutorID 5727d7-1 | JobID M000 - Data per activation is < 8.0KiB. Passing data through invocation payload
+2022-01-07 10:42:52,480 [INFO] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Starting function invocation: inverted_map() - Total: 20 activations
+2022-01-07 10:42:52,481 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Worker processes: 1 - Chunksize: 1
+2022-01-07 10:42:52,482 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 - Async invoker 0 started
+2022-01-07 10:42:52,483 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 - Async invoker 1 started
+2022-01-07 10:42:52,483 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Free workers: 1200 - Going to run 20 activations in 20 workers
+2022-01-07 10:42:52,518 [INFO] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - View execution logs at /private/var/folders/41/21yq_s992776m2qf34b8yrq40000gn/T/lithops/logs/5727d7-1-M000.log
+2022-01-07 10:42:52,519 [DEBUG] lithops.monitor -- ExecutorID 5727d7-1 - Starting Storage job monitor
+2022-01-07 10:42:52,520 [INFO] lithops.wait -- ExecutorID 5727d7-1 - Getting results from functions
+2022-01-07 10:42:52,734 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00004 invoked (0.238s) - Activation ID: 729c631005044b699c63100504ab696f
+2022-01-07 10:42:52,739 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00010 invoked (0.233s) - Activation ID: 98b5d23d4e974a55b5d23d4e97ea5549
+2022-01-07 10:42:52,740 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00008 invoked (0.238s) - Activation ID: 020141be9e864b1b8141be9e867b1b4b
+2022-01-07 10:42:52,742 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00001 invoked (0.250s) - Activation ID: 5cfbd6e08f644edfbbd6e08f646edf43
+2022-01-07 10:42:52,745 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00009 invoked (0.241s) - Activation ID: 0cdd2d9cb45549d89d2d9cb455e9d8c6
+2022-01-07 10:42:52,746 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00003 invoked (0.253s) - Activation ID: 10bbfc3973cb4224bbfc3973cb2224a6
+2022-01-07 10:42:52,747 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00006 invoked (0.247s) - Activation ID: 144b709ba8cc407d8b709ba8cc007d91
+2022-01-07 10:42:52,747 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00005 invoked (0.249s) - Activation ID: a2a3cf8542bd4a40a3cf8542bd8a4003
+2022-01-07 10:42:52,751 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00007 invoked (0.250s) - Activation ID: f9910c95b77c4de1910c95b77cede181
+2022-01-07 10:42:52,752 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00012 invoked (0.244s) - Activation ID: 89f1e85946fd48c3b1e85946fdb8c35f
+2022-01-07 10:42:52,752 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00011 invoked (0.245s) - Activation ID: c71df245705848fa9df245705818fa64
+2022-01-07 10:42:52,754 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00016 invoked (0.238s) - Activation ID: 0d69c459f8fb4703a9c459f8fba7033f
+2022-01-07 10:42:52,760 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00015 invoked (0.244s) - Activation ID: e97ab5e98a6d4c2bbab5e98a6dac2bd0
+2022-01-07 10:42:52,760 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00000 invoked (0.272s) - Activation ID: 498f1ad205b8447e8f1ad205b8247ec6
+2022-01-07 10:42:52,769 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00002 invoked (0.277s) - Activation ID: c9126f5689d949da926f5689d919da13
+2022-01-07 10:42:52,773 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00019 invoked (0.256s) - Activation ID: 5cea5e3699234febaa5e369923dfeb91
+2022-01-07 10:42:52,776 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00014 invoked (0.262s) - Activation ID: f1d2c19fd80e47bf92c19fd80ee7bfaa
+2022-01-07 10:42:52,783 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00018 invoked (0.265s) - Activation ID: 39d2c3e13a2a49ac92c3e13a2a09acba
+2022-01-07 10:42:52,795 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00017 invoked (0.279s) - Activation ID: 93a39cc624ed425fa39cc624ed725f75
+2022-01-07 10:42:52,802 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M000 - Calls 00013 invoked (0.293s) - Activation ID: 5bf25b49e9b34181b25b49e9b3e18120
+2022-01-07 10:42:54,626 [DEBUG] lithops.monitor -- ExecutorID 5727d7-1 - Pending: 0 - Running: 20 - Done: 0
+2022-01-07 10:42:57,366 [DEBUG] lithops.monitor -- ExecutorID 5727d7-1 - Pending: 0 - Running: 0 - Done: 20
+2022-01-07 10:42:57,366 [DEBUG] lithops.monitor -- ExecutorID 5727d7-1 - Storage job monitor finished
+2022-01-07 10:42:57,549 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00000 - Activation ID: 498f1ad205b8447e8f1ad205b8247ec6 - Time: 2.56 seconds
+2022-01-07 10:42:57,550 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00003 - Activation ID: 10bbfc3973cb4224bbfc3973cb2224a6 - Time: 2.62 seconds
+2022-01-07 10:42:57,552 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00001 - Activation ID: 5cfbd6e08f644edfbbd6e08f646edf43 - Time: 2.51 seconds
+2022-01-07 10:42:57,556 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00002 - Activation ID: c9126f5689d949da926f5689d919da13 - Time: 2.58 seconds
+2022-01-07 10:42:57,556 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00004 - Activation ID: 729c631005044b699c63100504ab696f - Time: 2.49 seconds
+2022-01-07 10:42:57,557 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00010 - Activation ID: 98b5d23d4e974a55b5d23d4e97ea5549 - Time: 2.14 seconds
+2022-01-07 10:42:57,557 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00005 - Activation ID: a2a3cf8542bd4a40a3cf8542bd8a4003 - Time: 2.75 seconds
+2022-01-07 10:42:57,559 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00009 - Activation ID: 0cdd2d9cb45549d89d2d9cb455e9d8c6 - Time: 2.83 seconds
+2022-01-07 10:42:57,560 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00007 - Activation ID: f9910c95b77c4de1910c95b77cede181 - Time: 2.74 seconds
+2022-01-07 10:42:57,561 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00006 - Activation ID: 144b709ba8cc407d8b709ba8cc007d91 - Time: 2.72 seconds
+2022-01-07 10:42:57,561 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00008 - Activation ID: 020141be9e864b1b8141be9e867b1b4b - Time: 2.71 seconds
+2022-01-07 10:42:57,561 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00011 - Activation ID: c71df245705848fa9df245705818fa64 - Time: 2.83 seconds
+2022-01-07 10:42:57,566 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00012 - Activation ID: 89f1e85946fd48c3b1e85946fdb8c35f - Time: 2.78 seconds
+2022-01-07 10:42:57,569 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00013 - Activation ID: 5bf25b49e9b34181b25b49e9b3e18120 - Time: 2.60 seconds
+2022-01-07 10:42:57,572 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00014 - Activation ID: f1d2c19fd80e47bf92c19fd80ee7bfaa - Time: 2.67 seconds
+2022-01-07 10:42:57,573 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00015 - Activation ID: e97ab5e98a6d4c2bbab5e98a6dac2bd0 - Time: 2.67 seconds
+
+2022-01-07 10:42:57,573 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00017 - Activation ID: 93a39cc624ed425fa39cc624ed725f75 - Time: 2.58 seconds
+2022-01-07 10:42:57,573 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00016 - Activation ID: 0d69c459f8fb4703a9c459f8fba7033f - Time: 2.68 seconds
+2022-01-07 10:42:57,574 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00019 - Activation ID: 5cea5e3699234febaa5e369923dfeb91 - Time: 2.78 seconds
+2022-01-07 10:42:57,576 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got status from call 00018 - Activation ID: 39d2c3e13a2a49ac92c3e13a2a09acba - Time: 2.79 seconds
+2022-01-07 10:42:57,637 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00001 - Activation ID: 5cfbd6e08f644edfbbd6e08f646edf43
+2022-01-07 10:42:57,641 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00002 - Activation ID: c9126f5689d949da926f5689d919da13
+2022-01-07 10:42:57,644 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00000 - Activation ID: 498f1ad205b8447e8f1ad205b8247ec6
+2022-01-07 10:42:57,646 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00003 - Activation ID: 10bbfc3973cb4224bbfc3973cb2224a6
+2022-01-07 10:42:57,649 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00004 - Activation ID: 729c631005044b699c63100504ab696f
+2022-01-07 10:42:57,655 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00007 - Activation ID: f9910c95b77c4de1910c95b77cede181
+2022-01-07 10:42:57,657 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00009 - Activation ID: 0cdd2d9cb45549d89d2d9cb455e9d8c6
+2022-01-07 10:42:57,659 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00006 - Activation ID: 144b709ba8cc407d8b709ba8cc007d91
+2022-01-07 10:42:57,661 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00010 - Activation ID: 98b5d23d4e974a55b5d23d4e97ea5549
+2022-01-07 10:42:57,663 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00005 - Activation ID: a2a3cf8542bd4a40a3cf8542bd8a4003
+2022-01-07 10:42:57,670 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00011 - Activation ID: c71df245705848fa9df245705818fa64
+2022-01-07 10:42:57,673 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00012 - Activation ID: 89f1e85946fd48c3b1e85946fdb8c35f
+2022-01-07 10:42:57,675 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00008 - Activation ID: 020141be9e864b1b8141be9e867b1b4b
+2022-01-07 10:42:57,678 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00013 - Activation ID: 5bf25b49e9b34181b25b49e9b3e18120
+2022-01-07 10:42:57,680 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00014 - Activation ID: f1d2c19fd80e47bf92c19fd80ee7bfaa
+2022-01-07 10:42:57,687 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00015 - Activation ID: e97ab5e98a6d4c2bbab5e98a6dac2bd0
+2022-01-07 10:42:57,689 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00017 - Activation ID: 93a39cc624ed425fa39cc624ed725f75
+2022-01-07 10:42:57,690 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00016 - Activation ID: 0d69c459f8fb4703a9c459f8fba7033f
+2022-01-07 10:42:57,708 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00019 - Activation ID: 5cea5e3699234febaa5e369923dfeb91
+2022-01-07 10:42:57,712 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M000 - Got output from call 00018 - Activation ID: 39d2c3e13a2a49ac92c3e13a2a09acba
+2022-01-07 10:42:57,727 [INFO] lithops.executors -- ExecutorID 5727d7-1 - Cleaning temporary data
+2022-01-07 10:42:57,739 [DEBUG] lithops.executors -- ExecutorID 5727d7-1 - Finished getting results
+2022-01-07 10:42:57,943 [INFO] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Selected Runtime: lithopscloud/ibmcf-python-v38 - 256MB
+2022-01-07 10:42:57,944 [DEBUG] lithops.storage.storage -- Runtime metadata found in local memory cache
+2022-01-07 10:42:57,944 [DEBUG] lithops.job.job -- ExecutorID 5727d7-1 | JobID M001 - Serializing function and data
+2022-01-07 10:42:57,952 [DEBUG] lithops.job.serialize -- Referenced modules: None
+2022-01-07 10:42:57,953 [DEBUG] lithops.job.serialize -- Modules to transmit: None
+2022-01-07 10:42:57,954 [DEBUG] lithops.job.job -- ExecutorID 5727d7-1 | JobID M001 - Uploading function and modules to the storage backend
+2022-01-07 10:42:58,155 [DEBUG] lithops.storage.backends.ibm_cos.ibm_cos -- PUT Object lithops.jobs/5727d7-1/13b695faff69a0e3665519a44c3daf7d.func.pickle - Size: 1.5KiB - OK
+2022-01-07 10:42:58,156 [DEBUG] lithops.job.job -- ExecutorID 5727d7-1 | JobID M001 - Data per activation is < 8.0KiB. Passing data through invocation payload
+2022-01-07 10:42:58,157 [INFO] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Starting function invocation: inverted_reduce() - Total: 8 activations
+2022-01-07 10:42:58,158 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Worker processes: 1 - Chunksize: 1
+2022-01-07 10:42:58,159 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Free workers: 1180 - Going to run 8 activations in 8 workers
+2022-01-07 10:42:58,160 [INFO] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - View execution logs at /private/var/folders/41/21yq_s992776m2qf34b8yrq40000gn/T/lithops/logs/5727d7-1-M001.log
+2022-01-07 10:42:58,171 [DEBUG] lithops.monitor -- ExecutorID 5727d7-1 - Starting Storage job monitor
+2022-01-07 10:42:58,172 [INFO] lithops.wait -- ExecutorID 5727d7-1 - Getting results from functions
+2022-01-07 10:42:58,412 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Calls 00007 invoked (0.243s) - Activation ID: 151ee20a9a0f4c4a9ee20a9a0f0c4afc
+2022-01-07 10:42:58,417 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Calls 00000 invoked (0.256s) - Activation ID: 50a64b28f2a24aa5a64b28f2a22aa549
+2022-01-07 10:42:58,418 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Calls 00002 invoked (0.254s) - Activation ID: 6a70783462ac4c5ab0783462ac4c5ad8
+2022-01-07 10:42:58,419 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Calls 00001 invoked (0.257s) - Activation ID: 488a175fab7d40638a175fab7da063c3
+2022-01-07 10:42:58,444 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Calls 00004 invoked (0.277s) - Activation ID: 73c161d36d2d45088161d36d2d750860
+2022-01-07 10:42:58,448 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Calls 00005 invoked (0.281s) - Activation ID: 41b833fd68b44118b833fd68b471182f
+2022-01-07 10:42:58,454 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Calls 00003 invoked (0.288s) - Activation ID: 3159a388310845fa99a3883108a5fa5d
+2022-01-07 10:42:58,489 [DEBUG] lithops.invokers -- ExecutorID 5727d7-1 | JobID M001 - Calls 00006 invoked (0.322s) - Activation ID: 807a2f7054814badba2f7054811bad0d
+2022-01-07 10:43:00,586 [DEBUG] lithops.monitor -- ExecutorID 5727d7-1 - Pending: 0 - Running: 0 - Done: 8
+2022-01-07 10:43:00,586 [DEBUG] lithops.monitor -- ExecutorID 5727d7-1 - Storage job monitor finished
+2022-01-07 10:43:01,190 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got status from call 00000 - Activation ID: 50a64b28f2a24aa5a64b28f2a22aa549 - Time: 0.76 seconds
+2022-01-07 10:43:01,195 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got status from call 00005 - Activation ID: 41b833fd68b44118b833fd68b471182f - Time: 0.73 seconds
+2022-01-07 10:43:01,196 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got status from call 00002 - Activation ID: 6a70783462ac4c5ab0783462ac4c5ad8 - Time: 0.80 seconds
+2022-01-07 10:43:01,196 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got status from call 00001 - Activation ID: 488a175fab7d40638a175fab7da063c3 - Time: 0.29 seconds
+2022-01-07 10:43:01,197 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got status from call 00004 - Activation ID: 73c161d36d2d45088161d36d2d750860 - Time: 0.26 seconds
+2022-01-07 10:43:01,199 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got status from call 00003 - Activation ID: 3159a388310845fa99a3883108a5fa5d - Time: 0.76 seconds
+2022-01-07 10:43:01,200 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got status from call 00006 - Activation ID: 807a2f7054814badba2f7054811bad0d - Time: 0.71 seconds
+2022-01-07 10:43:01,200 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got status from call 00007 - Activation ID: 151ee20a9a0f4c4a9ee20a9a0f0c4afc - Time: 0.73 seconds
+2022-01-07 10:43:01,264 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got output from call 00005 - Activation ID: 41b833fd68b44118b833fd68b471182f
+2022-01-07 10:43:01,266 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got output from call 00000 - Activation ID: 50a64b28f2a24aa5a64b28f2a22aa549
+2022-01-07 10:43:01,282 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got output from call 00001 - Activation ID: 488a175fab7d40638a175fab7da063c3
+2022-01-07 10:43:01,285 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got output from call 00004 - Activation ID: 73c161d36d2d45088161d36d2d750860
+2022-01-07 10:43:01,287 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got output from call 00002 - Activation ID: 6a70783462ac4c5ab0783462ac4c5ad8
+2022-01-07 10:43:01,289 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got output from call 00003 - Activation ID: 3159a388310845fa99a3883108a5fa5d
+2022-01-07 10:43:01,293 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got output from call 00006 - Activation ID: 807a2f7054814badba2f7054811bad0d
+2022-01-07 10:43:01,333 [DEBUG] lithops.future -- ExecutorID 5727d7-1 | JobID M001 - Got output from call 00007 - Activation ID: 151ee20a9a0f4c4a9ee20a9a0f0c4afc
+2022-01-07 10:43:01,341 [INFO] lithops.executors -- ExecutorID 5727d7-1 - Cleaning temporary data
+2022-01-07 10:43:01,344 [DEBUG] lithops.executors -- ExecutorID 5727d7-1 - Finished getting results
