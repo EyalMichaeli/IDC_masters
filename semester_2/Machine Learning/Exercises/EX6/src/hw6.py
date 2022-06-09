@@ -81,7 +81,7 @@ def kmeans(X, k, p ,max_iter=100):
         centroids = np.array([np.mean(X[np.where(classes == centroid_index)], axis=0) for centroid_index in range(len(centroids))])
 
         if np.allclose(last_centroids, centroids):
-            print(f"Stopped after {_iter+1} Iterations, because of no change in centroids values")
+            # print(f"Stopped after {_iter+1} Iterations, because of no change in centroids values")
             break
 
     ###########################################################################
@@ -151,7 +151,7 @@ def kmeans_pp(X, k, p ,max_iter=100):
         centroids = np.array([np.mean(X[np.where(classes == centroid_index)], axis=0) for centroid_index in range(len(centroids))])
 
         if np.allclose(last_centroids, centroids):
-            print(f"Stopped after {_iter+1} Iterations, because of no change in centroids values")
+            # print(f"Stopped after {_iter+1} Iterations, because of no change in centroids values")
             break
 
     ###########################################################################
