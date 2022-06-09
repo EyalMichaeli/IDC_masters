@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8da8e4e5-48d7-4ff0-a356-cb07fe03a452" name="Changes" comment="" />
+    <list default="true" id="8da8e4e5-48d7-4ff0-a356-cb07fe03a452" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/semester_2/stat/Exercises/tzach/EX4/302673355_EX4_AS4DS.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/semester_2/stat/Exercises/tzach/EX4/302673355_EX4_AS4DS.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
